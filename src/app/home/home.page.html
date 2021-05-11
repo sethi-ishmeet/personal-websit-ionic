@@ -1,20 +1,97 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Ishmeet Sethi </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Ishmeet Sethi</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div
+    fxFlexFill
+    fxLayout="row"
+    fxLayoutGap="16px"
+    fxLayoutAlign="center stretch"
+  >
+    <div
+      id="container"
+      fxFlex.gt-sm="50"
+      fxFlex.lt-md="100"
+      fxLayout="column"
+      fxLayoutAlign="start start"
+      fxLayoutGap="16px"
+      style="padding: 16px"
+    >
+      <strong fxFlexOffset="20px" fxFlexAlign="center">
+        Hello, my name is Ishmeet and I currently work at Microsoft.
+      </strong>
+      <h3>About me</h3>
+      <p>
+        I have 4+ years of experience in the Software Industry and Start-up
+        world. I started my career with <b>Royal Bank of Canada</b> as iOS
+        Engineer building their amazing Mobile Banking App. I then transitioned
+        into the start-up world as a Co-founder and CTO at
+        <a href="https://www.simplifiedautomation.com" target="_blank"
+          >Simplified Automation Inc.</a
+        >
+        I led the Software Engineering team there and primarily worked on
+        technologies such as Angular, .NET Core, DevOps, iOS, Azure Cloud, ELK
+        stack, Firebase among a few others.
+      </p>
+      <h3>Blog</h3>
+      <p>
+        <a
+          href="https://ishmeetsing.medium.com/my-microsoft-interview-experience-and-preparation-guide-6e456a1e95b7"
+          target="_blank"
+          >My Microsoft interview experience and Preparation Guide</a
+        >
+      </p>
+      <h3>Mentorship Series</h3>
+      <p>
+        If you'd like to meet me for a virtual coffee for mentorship or if you
+        have any questions,
+        <a href="https://calendly.com/ishmeetsethi/30min" target="_blank"
+          >please book a time with me</a
+        >. I will try my best to answer your questions.
+      </p>
+      <p>I can help you with following topics:</p>
+      <p>- Preparing for a technical Interview</p>
+      <p>
+        - Learning Technology Stacks: Swift, iOS, Angular, .NET Core, Azure
+        Cloud, DevOps, Mobile Applications, Firebase, Ionic, Git
+      </p>
+      <p>
+        - How to build a software product from scratch: things to consider, pick
+        your technology stack, deploy to the internet!
+      </p>
+      <p>- Product Management</p>
+      <p>- Applying to Universities in Canada/US</p>
+      <p>
+        If you think I have helped you in reaching your professional goals,
+        please consider
+        <a href="https://www.buymeacoffee.com/ishmeet" target="_blank"
+          >buying me a coffee.</a
+        >
+      </p>
+      <span fxFlex="grow"></span>
+      <div
+        fxLayout="row"
+        fxLayoutGap="16px"
+        fxLayout="center center"
+        fxFlexAlign="center"
+      >
+        <a
+          *ngFor="let social of socials"
+          href="{{social.link}}"
+          target="_blank"
+        >
+          <img src="{{social.image}}" style="height: 30px !important" />
+        </a>
+      </div>
+    </div>
   </div>
 </ion-content>
