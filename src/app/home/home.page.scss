@@ -8,7 +8,9 @@
   line-height: 22px;
 
   color: #8c8c8c;
-
+  @media (prefers-color-scheme: dark) {
+    color: #eceff1;
+  }
   margin: 0;
 }
 
