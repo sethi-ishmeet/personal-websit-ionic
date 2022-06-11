@@ -10,7 +10,6 @@
       <ion-title size="large">Ishmeet Sethi</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <div
     fxFlexFill
     fxLayout="row"
@@ -29,12 +28,34 @@
       <strong fxFlexOffset="20px" fxFlexAlign="center">
         Hello, my name is Ishmeet and I currently work at Microsoft.
       </strong>
+      <div
+        fxLayout="row"
+        fxLayoutGap="16px"
+        fxLayout="center center"
+        fxFlexAlign="center"
+      >
+        <a
+          *ngFor="let social of socials"
+          href="{{social.link}}"
+          target="_blank"
+        >
+          <img src="{{social.image}}" style="height: 30px !important" />
+        </a>
+      </div>
       <h3>About me</h3>
       <p>
-        I have 4+ years of experience in the Software Industry and Start-up
-        world. I started my career with <b>Royal Bank of Canada</b> as iOS
-        Engineer building their amazing Mobile Banking App. I then transitioned
-        into the start-up world as a Co-founder and CTO at
+        I have 5+ years of experience in the Software Engineering and
+        building Engineering focussed Start-up from $0 to $500K USD.
+      </p>
+      <p>
+        I currently work at <a href="https://www.microsoft.com/" target="_blank">Microsoft</a> 
+        in Teams Engineering Calling and Meeting area. I have independently led many features in 
+        Teams meetings used by over <b>250Mn Monthly Active Users</b> worldwide.
+      </p>
+      <p>
+        I started my career with <b>Royal Bank of Canada</b> as iOS Engineer
+        building their amazing Mobile Banking App. I then transitioned into the
+        start-up world as a Co-founder and CTO at
         <a href="https://www.simplifiedautomation.com" target="_blank"
           >Simplified Automation Inc.</a
         >
@@ -74,9 +95,21 @@
         You can book mock interviews with me to prepare for following
         interviews:
       </p>
-      <p>- DS and Algorithms</p>
-      <p>- System Design Interview</p>
-      <p>- iOS Engineering Interview</p>
+      <p>
+        <a href="https://www.buymeacoffee.com/ishmeet/e/31741" target="_blank"
+          >- DS and Algorithms</a
+        >
+      </p>
+      <p>
+        <a href="https://www.buymeacoffee.com/ishmeet/e/31742" target="_blank"
+          >- System Design Interview</a
+        >
+      </p>
+      <p>
+        <a href="https://www.buymeacoffee.com/ishmeet/e/31741" target="_blank"
+          >- iOS Engineering Interview</a
+        >
+      </p>
 
       <p>
         Please note the <b>mock interviews are paid</b> to cover for time that
@@ -84,7 +117,7 @@
         <a href="https://www.buymeacoffee.com/ishmeet/extras" target="_blank"
           >book a mock interview with me</a
         >
-        for <b>$20</b>. If you feel this amount is too much for you, or you need
+        for <b>$40</b>. If you feel this amount is too much for you, or you need
         some financial assistance, please
         <a
           href="mailto:sethi.ishmeet@gmail.com?subject=Mock interview financial assistance"
@@ -103,7 +136,7 @@
       <p>
         If you'd like to meet me for a virtual coffee for mentorship or if you
         have any questions,
-        <a href="https://calendly.com/ishmeetsethi/30min" target="_blank"
+        <a href="https://www.buymeacoffee.com/ishmeet/extras" target="_blank"
           >please book a time with me</a
         >. I will try my best to answer your questions.
       </p>
@@ -126,21 +159,6 @@
           >buying me a coffee.</a
         >
       </p>
-      <span fxFlex="grow"></span>
-      <div
-        fxLayout="row"
-        fxLayoutGap="16px"
-        fxLayout="center center"
-        fxFlexAlign="center"
-      >
-        <a
-          *ngFor="let social of socials"
-          href="{{social.link}}"
-          target="_blank"
-        >
-          <img src="{{social.image}}" style="height: 30px !important" />
-        </a>
-      </div>
     </div>
   </div>
 </ion-content>
